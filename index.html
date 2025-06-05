@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explore Tirana, Albania</title>
+  <style>
+    /* Inline CSS for styling */
+    body {
+      background-color: #f0f8ff; /* Light blue background */
+      font-family: Arial, sans-serif; /* Default font */
+      margin: 20px;
+    }
+    body p.special {
+      font-family: 'Georgia', serif; /* Different font family for specific paragraph */
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #cc0000;
+      text-decoration: underline;
+    }
+    a:focus {
+      outline: 3px solid #000;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 2px solid #000; /* Table border */
+    }
+    th {
+      background-color: #d2b48c; /* Table header background */ 
+      border: 1px solid #000;
+      padding: 8px;
+    }
+    td {
+      border: 1px solid #000;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip navigation link -->
+  <a href="#maincontent" class="skip-link">Skip to Main Content</a>
+
+  <!-- Main heading -->
+  <h1>Discover Tirana, Albania</h1>
+
+  <!-- Paragraphs -->
+  <p>Welcome to Tirana, the vibrant capital of Albania! Explore its colorful buildings, rich history, and lively culture.</p>
+  <p class="special">Tirana was officially established in <strong>1614</strong>. As you explore the city, you’ll encounter a striking mix of architectural styles, from Ottoman mosques and Fascist-era government buildings to Soviet-style blocks and bold, modern art installations. This eclectic landscape reflects Albania’s complex past and its forward-looking spirit.</p>
+  <p>Plan your visit to experience the unique blend of old traditions and modern life in Tirana.</p>
+
+  <!-- Emphasized text with bold and italics -->
+  <p>Some must-see attractions include the <strong>Skanderbeg Square</strong> and the <strong>National History Museum</strong>.</p>
+
+  <!-- Superscript and subscript -->
+  <p>The population of Tirana is approximately 535,702<sup>1</sup>, and its metro area covers 464 km<sub>2</sub>.</p>
+
+  <!-- Unordered list -->
+  <h2 id="maincontent">Top Activities in Tirana</h2>
+  <ul>
+    <li>Visit the famous <strong>Skanderbeg Square</strong> in downton Tirana</li>
+    <li>Learn about the country's history at the <strong>Albanian History Museum</strong></li>
+    <li>Enjoy local Albanian cuisine, and try some of the country's national dishes, like <em>byrek</em></li>
+  </ul>
+
+  <!-- Ordered list -->
+  <h2>Travel Tips</h2>
+  <ol>
+    <li>Learn some basic Albanian phrases</li>
+    <li>Become comfortable with using Albanian currency called <em>Lek</em></li>
+    <li>Respect local customs and traditions</li>
+  </ol>
+
+  <!-- External link with target -->
+  <p>Learn more about Tirana at the <a href="https://albania.al/destinations/tirana/" target="_blank" rel="noopener noreferrer">Official Website of Albanian National Tourism Agency</a>.</p>
+
+    <!-- Image with alt text -->
+   <h3>Skanderbeg Square</h3>
+    <img src="skanderbeg.webp" 
+         alt="Skanderbeg Square in Tirana" 
+         width="600">
+
+  <!-- Complex image with long description using ARIA -->
+  <h3>Albanian National History Museum</h3>
+  <img src="museum.webp" alt="" aria-describedby="desc1" />
+  <div id="desc1" style="display:none;">
+    The image shows the grand entrance to the Albanian National History Museum in Tirana, located on Skanderbeg Square.
+  The building is modernist in design with a wide staircase leading to tall white columns and large glass doors. 
+  Above the entrance is a striking and iconic mosaic called "The Albanians," depicting figures from various periods 
+  of Albania’s history, from ancient Illyrians to Communist-era partisans. The square in front is often filled with 
+  tourists and locals enjoying the public space.
+  </div>
+
+  <!-- Data table -->
+  <h2>Key Facts about Tirana</h2>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Aspect</th>
+        <th scope="col">Details</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Population</th>
+        <td>535,702<sup>1</sup></td>
+        <td>As of 2025</td>
+      </tr>
+      <tr>
+        <th scope="row">Area</th>
+        <td>42 km<sup>2</sup></td>
+        <td>City proper</td>
+      </tr>
+      <tr>
+        <th scope="row">Official Language</th>
+        <td>Albanian</td>
+        <td>Primary language spoken</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Form elements -->
+  <h2>Plan Your Trip</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" /><br/><br/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" /><br/><br/>
+
+    <label>
+      <input type="radio" name="travel" value="nature" /> Nature
+    </label><br/>
+    <label>
+      <input type="radio" name="interests" value="culture" /> Culture
+    </label><br/>
+    <label>
+      <input type="radio" name="interests" value="food" /> Food & Cuisine
+    </label><br/><br/>
+
+    <label>
+      <input type="checkbox" name="newsletter" unchecked>
+        Subscribe to our travel newsletter
+        </label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
